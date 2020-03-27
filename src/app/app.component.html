@@ -1,0 +1,18 @@
+<form [formGroup]="form">
+  <fieldset>
+      <legend>Login</legend>
+      <div class="form-field">
+          <label>UserName:</label>
+          <input name="UserName" formControlName="UserName">
+      </div>
+      <div class="form-field">
+          <label>Password:</label>
+          <input name="Password" formControlName="Password" 
+                 type="Password">
+      </div>
+  </fieldset>
+  <div class="form-buttons">
+      <button class="btn btn-primary" 
+              (click)="login()">Login</button>
+  </div>
+</form>
